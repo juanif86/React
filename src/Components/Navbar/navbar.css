@@ -1,4 +1,7 @@
 .Navbar{
+    background-color: rgb(246, 250, 15);
+    margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
