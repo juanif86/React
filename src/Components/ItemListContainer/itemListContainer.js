@@ -12,15 +12,11 @@ const ItemListContainer = (props) => {
     useEffect = ( () => {
         customFetch(productos)
             .then(res => setListaProductos(res))
-    }, []);
-
-/*     console.log(listaProductos) */
+     }, []);
 
     const onAdd = (quantity) => {
         console.log("compraste " +quantity+ " unidades");
     }
-
-
 
     return (
         <>

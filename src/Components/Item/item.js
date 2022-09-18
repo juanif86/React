@@ -1,6 +1,7 @@
 import React from "react";
 
 const Item = ({productos}) => {
+    console.log(productos)
     return(
         <>
         <div>{productos.descripcion}</div>
