@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 
-
-export const ItemCount = ({initial, stock, onAdd}) => {
+const ItemCount = ({initial, stock, onAdd}) => {
     
     const [contador, setContador] = useState(initial);
 
@@ -14,11 +13,6 @@ export const ItemCount = ({initial, stock, onAdd}) => {
         setContador(contador - 1);
     }
 
-    useEffect( () => {
-        setContador(parseInt(initial))
-    }, [initial])
-
-       
     return(
         <>
             <div>

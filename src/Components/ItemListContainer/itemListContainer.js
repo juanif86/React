@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from "react";
-import ItemCount from "../ItemCount";
-import Itemlist from "../ItemList";
+import ItemCount from "../ItemCount/itemcount";
+import Itemlist from "../ItemList/itemList";
 import { productos } from "../../Assets/productos";
 import { customFetch } from "../Utils/customFetch";
-
-
 
 
 const ItemListContainer = (props) => {
@@ -15,6 +13,8 @@ const ItemListContainer = (props) => {
         customFetch(productos)
             .then(res => setListaProductos(res))
     }, []);
+
+/*     console.log(listaProductos) */
 
     const onAdd = (quantity) => {
         console.log("compraste " +quantity+ " unidades");
