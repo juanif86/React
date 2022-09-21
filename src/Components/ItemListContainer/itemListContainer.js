@@ -11,7 +11,7 @@ const ItemListContainer = (props) => {
 
     useEffect = ( () => {
         customFetch(productos)
-            .then(res => setListaProductos(res))
+        .then(res => setListaProductos(res))
      }, []);
 
     const onAdd = (quantity) => {

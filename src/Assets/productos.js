@@ -20,7 +20,6 @@ export const productos = [
         descripcion: "yerba",
         precio: 500,
         stock: 50
-
     }
 ]
 
